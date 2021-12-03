@@ -11,4 +11,16 @@ body {
   justify-content: center;
   align-items: center;
   background: #ecf0f3;
+}
+
+.wrapper {
+  padding: 30px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #ecf0f3;
+  border-radius: 10px;
+  box-shadow: -3px -3px 7px #fff, 3px 3px 5px #ceced1;
 }/*# sourceMappingURL=main.css.map */
