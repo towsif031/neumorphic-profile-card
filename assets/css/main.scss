@@ -13,6 +13,13 @@ body {
 	background: #ecf0f3;
 }
 
+.wrapper,
+.wrapper .img-area {
+	background: #ecf0f3;
+	border-radius: 10px;
+	box-shadow: -3px -3px 7px #fff, 3px 3px 5px #ceced1;
+}
+
 .wrapper {
 	padding: 30px;
 	width: 350px;
@@ -20,7 +27,15 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	background: #ecf0f3;
-	border-radius: 10px;
-	box-shadow: -3px -3px 7px #fff, 3px 3px 5px #ceced1;
+
+	.img-area {
+		height: 150px;
+		width: 150px;
+		border-radius: 50%;
+
+		.inner-area {
+			height: calc(100% - 25px);
+			width: calc(100% - 25px);
+		}
+	}
 }
