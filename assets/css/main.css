@@ -31,9 +31,19 @@ body {
 .wrapper .img-area {
   height: 150px;
   width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
 }
 .wrapper .img-area .inner-area {
   height: calc(100% - 25px);
   width: calc(100% - 25px);
+}
+.wrapper .img-area img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=main.css.map */
