@@ -15,7 +15,8 @@ body {
 
 .wrapper,
 .wrapper .img-area,
-.social-icons a {
+.social-icons a,
+.buttons button {
   background: #ecf0f3;
   border-radius: 10px;
   box-shadow: -3px -3px 7px #fff, 3px 3px 5px #ceced1;
@@ -58,6 +59,23 @@ body {
   font-weight: 400;
   color: #44476a;
   font-size: 16px;
+}
+.wrapper .buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.wrapper .buttons button {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 12px 0;
+  font-size: 17px;
+  font-weight: 400;
+  color: #31344b;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .social-icons {
