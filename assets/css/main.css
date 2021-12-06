@@ -29,6 +29,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 .wrapper .img-area {
   height: 150px;
@@ -127,6 +128,38 @@ body {
 .wrapper .row:nth-child(1):hover i.icon-2, .wrapper .row:nth-child(2):hover i.icon-2 {
   opacity: 1;
   pointer-events: all;
+}
+.wrapper .icon {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  color: #31344b;
+  opacity: 0.7;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  text-align: center;
+}
+.wrapper .icon.arrow {
+  left: 15px;
+}
+.wrapper .icon.dots {
+  right: 15px;
+}
+.wrapper .icon:hover::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #ecf0f3;
+  border-radius: 50%;
+  box-shadow: inset -3px -3px 7px #fff, inset 3px 3px 5px #ceced1;
+}
+.wrapper .icon i {
+  position: relative;
+  z-index: 5;
 }
 
 .social-icons {
