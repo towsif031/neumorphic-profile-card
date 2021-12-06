@@ -97,6 +97,34 @@ body {
 			}
 		}
 	}
+
+	.social-share {
+		margin-top: 30px;
+		padding: 0 5px;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.row {
+		color: #31344b;
+		font-size: 17px;
+		cursor: pointer;
+		position: relative;
+
+		&::before {
+			position: absolute;
+			content: '';
+			width: 2px;
+			height: 100%;
+			background: #e0e6eb;
+			margin-left: -25px;
+		}
+
+		&:first-child::before {
+			background: none;
+		}
+	}
 }
 
 .social-icons {

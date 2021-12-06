@@ -91,6 +91,30 @@ body {
   z-index: -1;
   box-shadow: inset -3px -3px 7px #fff, inset 3px 3px 5px #ceced1;
 }
+.wrapper .social-share {
+  margin-top: 30px;
+  padding: 0 5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .row {
+  color: #31344b;
+  font-size: 17px;
+  cursor: pointer;
+  position: relative;
+}
+.wrapper .row::before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: #e0e6eb;
+  margin-left: -25px;
+}
+.wrapper .row:first-child::before {
+  background: none;
+}
 
 .social-icons {
   margin: 15px 0 25px 0;
