@@ -124,6 +124,22 @@ body {
 		&:first-child::before {
 			background: none;
 		}
+
+		i.icon-2 {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			opacity: 0;
+			pointer-events: none;
+			transition: all 0.3s ease;
+		}
+
+		&:nth-child(1):hover i.icon-2,
+		&:nth-child(2):hover i.icon-2 {
+			opacity: 1;
+			pointer-events: all;
+		}
 	}
 }
 
